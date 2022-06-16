@@ -8,15 +8,35 @@ lower_div.innerHTML = product_nav()
 
 
 let data = JSON.parse(localStorage.getItem("cart_data"))
+let data2 = data
+
 let total_price = document.querySelector("#price_div")
 
 let data_appender = document.getElementById("data_appender")
-let counter = 1;
-DisplayCart()
-totalShower()
 
-function DisplayCart() {
-    data.forEach(function(elem, index) {
+qtyCreater()
+
+
+
+
+
+function qtyCreater() {
+    data2.forEach(function(elem) {
+        elem.qty = 1
+        let number = +(elem.price)
+
+        // elem.price = pr
+
+    })
+    DisplayCart(data2, data)
+}
+
+
+function DisplayCart(datas, data) {
+
+    let data1 = data
+    data_appender.innerHTML = null
+    datas.forEach(function(elem, index, data1) {
         let main_div = document.createElement("div")
 
         let div1 = document.createElement("div")
@@ -30,9 +50,10 @@ function DisplayCart() {
         div2.append(name)
 
         let div3 = document.createElement("div")
-        let price = document.createElement("h3")
-        price.innerText = elem.price
-        div3.append(price)
+        let prices = document.createElement("h3")
+        prices.innerText = data1[index].price
+
+        div3.append(prices)
 
         let div4 = document.createElement("div")
         div4.setAttribute("class", "div4_cart")
@@ -41,7 +62,7 @@ function DisplayCart() {
 
         let div4_inside2 = document.createElement("div")
         let count_of_Qty = document.createElement("h4")
-        count_of_Qty.innerText = counter
+        count_of_Qty.innerText = elem.qty
 
         div4_inside2.append(count_of_Qty)
 
@@ -50,8 +71,7 @@ function DisplayCart() {
         add_button.innerText = "+"
         div4_inside1.append(add_button)
         div4_inside1.addEventListener("click", function() {
-            counter++
-            addQty(counter, elem, count_of_Qty)
+            addQty(index)
         })
 
 
@@ -62,7 +82,7 @@ function DisplayCart() {
         div4_inside3.append(remove_button)
         div4_inside3.addEventListener("click", function() {
 
-            removeQty(counter)
+            removeQty(index)
         })
 
         div4.append(div4_inside1, div4_inside2, div4_inside3)
@@ -76,31 +96,61 @@ function DisplayCart() {
 
         remove_product.setAttribute("class", "remove_product")
         remove_product.addEventListener("click", function() {
-            removeProduct(elem)
+            removeProduct(index)
         })
         div5.append(remove_product)
 
         main_div.append(div1, div2, div3, div4, div5)
         data_appender.append(main_div)
+
     })
+    totalShower(datas)
 }
 
-function addQty() {
-
-}
-
-
-
-function removeQty(counter) {
-
-}
-
-function removeProduct() {
-
-}
-
-function totalShower() {
+function totalShower(data2) {
     total_price.innerHTML = null
-    let total_amt = document.createElement("h3")
+    if (data2 == null || data2 == undefined) {
+        let total_amt = document.createElement("h3")
+        total_amt.innerText = "0"
+        total_price.append(total_amt)
+    } else {
+        let total = 0;
 
+        let total_amter = document.createElement("h3")
+        data2.forEach(function(elem) {
+            total = total + elem.price
+        })
+        console.log(total)
+        total_amter.innerText = total
+        total_price.append(total_amter)
+    }
+}
+
+function addQty(i) {
+    data2[i].qty++
+        let amt1 = +data2[i].price
+    let amt2 = +data[i].price
+    let total = amt1 + amt2
+    data2[i].price = total
+    DisplayCart(data2)
+}
+
+
+
+function removeQty(i) {
+    if (data2[i].qty > 1) {
+        data2[i].qty--
+            let total = data2[i].price - data[i].price
+        data2[i].price = total
+        DisplayCart(data2)
+    }
+}
+
+function removeProduct(i) {
+    console.log("dfaj")
+    data.splice(i, 1)
+
+    localStorage.setItem("cart_data", JSON.stringify(data))
+    data2 = data
+    DisplayCart(data2)
 }

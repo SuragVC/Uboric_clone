@@ -13,7 +13,7 @@
 
 #navbar p {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     font-weight: 300px;
     line-height: 2em;
     margin: auto;
@@ -88,4 +88,8 @@
     color: black;
     margin-left: 25px;
     margin-left: 50px;
+}
+
+#product_link>h3:hover {
+    color: #38799c;
 }
