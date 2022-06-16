@@ -1,5 +1,4 @@
-
-  function navbar(){
+function navbar() {
     return ` <div id="top_header">
   
 
@@ -21,12 +20,12 @@
        
     </div> 
   </div> `
-  
-  }
+
+}
 
 
- function product_nav(){
-   return `  <div id="categories_div">
+function product_nav() {
+    return `  <div id="categories_div">
    <a  id="product_link" href="index.html"><h3>HOME</h3></a>
    <a id="product_link" href="product.html"><h3>Products</h3></a>
    <a id="product_link" href="user.html"><h3>Customer/Guest login</h3></a>
@@ -34,11 +33,7 @@
    <h3>Become A Seller</h3>
 
 </div>`
- }
- 
-
-
- 
+}
 
 
 
@@ -47,4 +42,8 @@
 
 
 
- export {navbar,product_nav}
+
+
+
+
+export { navbar, product_nav }
