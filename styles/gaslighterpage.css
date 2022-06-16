@@ -1,0 +1,110 @@
+body {
+    font-family: sans-serif;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+#title_box {
+    text-align: center;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 81, 108);
+    font-family: sans-serif;
+}
+
+#main {
+    display: flex;
+    margin: auto;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+#sorter_div {
+    width: 20%;
+}
+
+#sortby {
+    margin-bottom: 10px;
+}
+
+#sortby label {
+    display: block;
+    font-size: larger;
+}
+
+#sortby select {
+    font-size: 16px;
+    width: 95%;
+    height: 30px;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#productcat h3 {
+    margin-bottom: 10px;
+}
+
+#productcat>div {
+    display: flex;
+    gap: 10px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+#productcat>div p {
+    margin: 0%;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+#append_products {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+#append_products>div {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: auto;
+    text-align: center;
+    width: 280px;
+    height: 350px;
+    padding: 10px;
+}
+
+#append_products img {
+    width: 200px;
+    height: 200px;
+}
+
+.price_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.price_div:hover {
+    cursor: pointer;
+}
+
+.addtocartbtn {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+}
