@@ -192,3 +192,13 @@ let footer_div = document.querySelector("#footer")
 
 import { footer } from "../components/footer.js";
 footer_div.innerHTML = footer()
+
+
+
+import { navbar } from '../components/navbar.js'
+let navbar_div = document.getElementById("navbar")
+navbar_div.innerHTML = navbar();
+
+import { product_nav } from '../components/navbar.js'
+let lower_div = document.getElementById("product_navbar")
+lower_div.innerHTML = product_nav()
