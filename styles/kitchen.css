@@ -89,11 +89,11 @@ body {
 
 .price_div {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     height: 30px;
     border-radius: 10px;
     margin-top: 30px;
+    padding-left: 5px;
 }
 
 .price_div:hover {
@@ -103,8 +103,14 @@ body {
 .addtocartbtn {
     background-color: black;
     color: white;
-    font-size: 15px;
-    width: 100%;
+    font-size: 13px;
+    width: 40%;
     border-radius: 10px;
     height: 30px;
+}
+
+.addtocartbtn:hover {
+    border: none;
+    color: white;
+    background-color: red;
 }

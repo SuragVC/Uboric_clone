@@ -121,14 +121,17 @@ function displayProducts() {
         let price = document.createElement("h2")
         price.innerText = `₹${data.price}`
         price_divinner.append(price)
-        price_div.append(price_divinner)
+        let input = document.createElement("input")
+        input.type = "submit"
+        input.value = "ADD TO CART"
+        input.setAttribute("class", "addtocartbtn")
 
-        price_div.addEventListener("mouseenter", function() {
-            hovered(data, div)
+        input.addEventListener("click", function() {
+            addtocart(data)
         })
-        price_div.addEventListener("mouseleave", function() {
-            moved(data, div)
-        })
+
+        price_div.append(price_divinner, input)
+
 
         div.append(img, name, price_div)
         appender.append(div)
@@ -136,57 +139,12 @@ function displayProducts() {
 
 }
 
-function hovered(datas, total1) {
-
-    let div1 = total1.querySelector(".price_div")
-
-    div1.innerHTML = null
-    let input = document.createElement("input")
-    input.type = "submit"
-    input.value = "ADD TO CART"
-    input.setAttribute("class", "addtocartbtn")
-
-    input.addEventListener("click", function() {
-        checkforproduct(datas, total1)
-    })
-
-    div1.append(input)
-
-}
-
-function checkforproduct(datas, div) {
-    arr_of_products.forEach(function(elem) {
-        if (datas.id == elem.id) {
-            alert("Item is already in the cart")
-        } else {
-            addtocart(datas, div)
-        }
-    })
-
-}
-
-
-function moved(data, total) {
-
-    let div = total.querySelector(".price_div")
-    div.innerHTML = null
-
-    let h2 = document.createElement("h2")
-    h2.innerText = `₹${data.price}`
-    div.append(h2)
-}
-
-
-function addtocart(datas, div) {
+function addtocart(datas) {
     arr_of_products.push(datas)
     localStorage.setItem("cart_data", JSON.stringify(arr_of_products))
-    alerter(datas, div)
+    alert("Item added to Cart")
 }
 
-function alerter(data, total) {
-    alert("Item added to Cart")
-    moved(data, total)
-}
 // ______________________________________________
 
 let sort = document.getElementById("select")
