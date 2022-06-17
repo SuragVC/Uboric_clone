@@ -4,10 +4,19 @@
 
 #top_header {
     width: 100%;
-    height: 45px;
+    height: 40px;
     position: static;
     background-color: #1E516C;
-    padding: 5px 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top_header p {
+    color: whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 #rupee {
@@ -73,29 +82,33 @@
 
 #categories_div {
     height: 75px;
-    width: 65%;
-    margin-top: 150px;
-    margin-left: 285px;
+    width: 60%;
+    padding-top: 15px;
+    /*margin-left: 285px; */
     display: flex;
-    gap: 25px;
+    /* gap: 25px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-evenly;
+    margin: auto;
+
 }
 
+
 #categories_div>h3 {
-    text-align: center;
-    /* margin: auto; */
+    /* text-align: center;
     cursor: pointer;
-    margin-left: 70px;
+    margin-left: 70px; */
 }
 
 #product_link {
     text-decoration: none;
     color: black;
-    margin-left: 25px;
-    margin-left: 50px;
+    /* margin-left: 25px;
+    margin-left: 50px; */
 }
 
 #product_link>h3:hover {
-    color: #38799c;
+    color: #1b6b95;
 }
 
 #product_navbar {

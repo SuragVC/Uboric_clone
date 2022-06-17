@@ -1,199 +1,205 @@
-   #animated_div {
-       height: 500px;
-   }
-   
-   #animated_div img {
-       height: 500px;
-       width: 100%;
-   }
-   
-   #main {
-       width: 95%;
-       margin: auto;
-   }
-   
-   #kitchenware {
-       height: 100px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       color: rgb(30, 81, 108);
-       font-size: 22px;
-       font-family: sans-serif;
-   }
-   
-   #underkitchen {
-       display: grid;
-       grid-template-columns: repeat(3, 1fr);
-       gap: 10px;
-   }
-   
-   #underkitchen img {
-       width: 480px;
-       height: 400px;
-   }
-   
-   #info {
-       margin-top: 60px;
-       display: flex;
-       justify-content: center;
-   }
-   
-   #info img {
-       width: 95%;
-       height: 350px;
-   }
-   
-   #othercat {
-       height: 100px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       color: rgb(30, 81, 108);
-       font-family: sans-serif;
-   }
-   
-   #oth2 {
-       margin-left: 100px;
-       margin-right: 100px;
-       width: 250px;
-       font-size: 30px;
-       text-align: center;
-       font-weight: bolder;
-   }
-   
-   #two_img {
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       gap: 10px;
-       margin-left: 5px;
-   }
-   
-   #two_img img {
-       width: 720px;
-       height: 450px;
-   }
-   
-   #head_phone {
-       margin-top: 60px;
-       display: flex;
-       justify-content: center;
-       margin-bottom: 50px;
-   }
-   
-   #head_phone img {
-       width: 95%;
-       height: 350px;
-   }
-   
-   #two_img2 {
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       gap: 10px;
-       margin-bottom: 50px;
-       margin-left: 5px;
-   }
-   
-   #two_img2 img {
-       width: 720px;
-       height: 450px;
-   }
-   
-   #add_grid {
-       padding: 5px;
-       display: grid;
-       grid-template-columns: repeat(5, 1fr);
-       gap: 10px;
-   }
-   
-   #add_grid img {
-       width: 280px;
-       height: 500px;
-       box-shadow: rgba(125, 140, 207, 0.605) 1px 8px 15px 8px;
-   }
-   
-   #spices {
-       height: 100px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       color: rgb(30, 81, 108);
-       font-family: sans-serif;
-   }
-   
-   #spi2 {
-       margin-left: 100px;
-       margin-right: 100px;
-       width: 250px;
-       font-size: 30px;
-       text-align: center;
-       font-weight: bolder;
-   }
-   
-   #spices_grid {
-       padding: 5px;
-       display: grid;
-       grid-template-columns: repeat(5, 1fr);
-       gap: 10px;
-   }
-   
-   #spices_grid img {
-       width: 280px;
-       height: 500px;
-       box-shadow: rgba(125, 140, 207, 0.605) 1px 8px 15px 8px;
-   }
-   
-   #footwear {
-       height: 100px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       color: rgb(30, 81, 108);
-       font-family: sans-serif;
-   }
-   
-   #foot2 {
-       margin-left: 100px;
-       margin-right: 100px;
-       width: 250px;
-       font-size: 30px;
-       text-align: center;
-       font-weight: bolder;
-   }
-   
-   #foot_wear_add {
-       display: flex;
-       justify-content: center;
-   }
-   
-   #foot_wear_add img {
-       width: 95%;
-       height: 350px;
-   }
-   
-   #footwear_gridbox {
-       padding: 5px;
-       display: grid;
-       grid-template-columns: repeat(5, 1fr);
-       gap: 10px;
-       margin-top: 15px;
-   }
-   
-   #footwear_gridbox img {
-       width: 280px;
-       height: 500px;
-       box-shadow: rgba(125, 140, 207, 0.605) 1px 8px 15px 8px;
-   }
-   
-   #footwear_gridbox img:hover,
-   #foot_wear_add img:hover,
-   #spices_grid img:hover,
-   #add_grid img:hover,
-   #two_img2 img:hover,
-   #underkitchen img:hover,
-   #head_phone img:hover,
-   #two_img img:hover {
-       transform: scale(1.02);
-       background-color: red;
-       box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-   }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#animated_div {
+    height: 500px;
+}
+
+#animated_div img {
+    height: 500px;
+    width: 100%;
+}
+
+#main {
+    width: 95%;
+    margin: auto;
+}
+
+#kitchenware {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 81, 108);
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+#underkitchen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#underkitchen img {
+    width: 480px;
+    height: 400px;
+}
+
+#info {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#info img {
+    width: 95%;
+    height: 350px;
+}
+
+#othercat {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 81, 108);
+    font-family: sans-serif;
+}
+
+#oth2 {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 250px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#two_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 5px;
+}
+
+#two_img img {
+    width: 720px;
+    height: 450px;
+}
+
+#head_phone {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#head_phone img {
+    width: 95%;
+    height: 350px;
+}
+
+#two_img2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+}
+
+#two_img2 img {
+    width: 720px;
+    height: 450px;
+}
+
+#add_grid {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+#add_grid img {
+    width: 280px;
+    height: 500px;
+    box-shadow: rgba(125, 140, 207, 0.605) 1px 8px 15px 8px;
+}
+
+#spices {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 81, 108);
+    font-family: sans-serif;
+}
+
+#spi2 {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 250px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#spices_grid {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+#spices_grid img {
+    width: 280px;
+    height: 500px;
+    box-shadow: rgba(125, 140, 207, 0.605) 1px 8px 15px 8px;
+}
+
+#footwear {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 81, 108);
+    font-family: sans-serif;
+}
+
+#foot2 {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 250px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#foot_wear_add {
+    display: flex;
+    justify-content: center;
+}
+
+#foot_wear_add img {
+    width: 95%;
+    height: 350px;
+}
+
+#footwear_gridbox {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#footwear_gridbox img {
+    width: 280px;
+    height: 500px;
+    box-shadow: rgba(125, 140, 207, 0.605) 1px 8px 15px 8px;
+}
+
+#footwear_gridbox img:hover,
+#foot_wear_add img:hover,
+#spices_grid img:hover,
+#add_grid img:hover,
+#two_img2 img:hover,
+#underkitchen img:hover,
+#head_phone img:hover,
+#two_img img:hover {
+    transform: scale(1.02);
+    background-color: red;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
