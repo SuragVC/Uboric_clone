@@ -1,0 +1,58 @@
+body {
+    background: #1488CC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#otp_box {
+    padding: 10px;
+    text-align: center;
+    width: 22%;
+    height: 250px;
+    background-color: aliceblue;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+}
+
+#otp_box p {
+    color: red;
+}
+
+#grider {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+#grider input {
+    margin: 0%;
+    text-align: center;
+    font-size: 22px;
+    width: 80%;
+    height: 50px;
+}
+
+#confirm_btn {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 40%;
+    height: 50px;
+    font-size: 16px;
+}
+
+#confirm_btn:hover {
+    background-color: red;
+}
