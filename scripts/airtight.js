@@ -2,97 +2,97 @@ let Product_data = [{
         id: "1",
         img: "https://www.uboric.com/wp-content/uploads/2020/12/handi-800ml-grey-shoptool-original-imafxu7e79mt5vkw.png",
         name: "Shoptool New Grocery Containers – 800...",
-        price: "599.00"
+        price: 599.00
     },
     {
         id: "2",
         img: "https://www.uboric.com/wp-content/uploads/2020/12/handi-01-shoptool-original-imafw2fyakfmze5m.png",
         name: "Shoptool New Grocery Containers – 800 ",
-        price: "599.00"
+        price: 599.00
     },
     {
         id: "3",
         img: "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-72.jpg",
         name: "Shoptool BPA Free 2 in 1 Storage Container with...",
-        price: "349.00"
+        price: 349.00
     },
     {
         id: "4",
         img: "https://www.uboric.com/wp-content/uploads/2020/12/handi-800ml-blue-shoptool-original-imafw2fyahryzhhf.png",
         name: "Shoptool Woman’s 1st Choice New Grocery...",
-        price: "599.00"
+        price: 599.00
     },
     {
         id: "5",
         img: "https://www.uboric.com/wp-content/uploads/2020/10/ASCAS-1.png",
         name: "Shoptool Woman’s 1st Choice – 1100...",
-        price: "999.00"
+        price: 999.00
     },
     {
         id: "6",
         img: "https://www.uboric.com/wp-content/uploads/2021/01/kitkat-1100ml-orange10-bluewhale-original-imafsz2gs3bwymf3.png",
         name: "SHOPTOOL New 10 Pieces – 1100...",
-        price: "999.00"
+        price: 999.00
     },
     {
         id: "7",
         img: "https://www.uboric.com/wp-content/uploads/2021/01/handi-container-grey-speack-original-imafwzfwfq27fwgh.png",
         name: "SHOPTOOL Grocery Containers – 800 ml...",
-        price: "949.00"
+        price: 949.00
     },
     {
         id: "8",
         img: "https://www.uboric.com/wp-content/uploads/2021/01/xllent9black1400ml-speack-original-imafymzd7q8wgmmf.png",
         name: "shoptool Grocery Containers – 900 ml...",
-        price: "999.00"
+        price: 999.00
     },
     {
         id: "9",
         img: "https://www.uboric.com/wp-content/uploads/2020/10/CASS.png",
         name: "Shoptool Woman’s 1st Choice Unbreakable ",
-        price: "989.00"
+        price: 989.00
     },
     {
         id: "10",
         img: "https://www.uboric.com/wp-content/uploads/2021/06/10.jpeg",
         name: "Shoptool ® Woman’s 1st choice 500 ml Plastic ",
-        price: "899.00"
+        price: 899.00
     },
     {
         id: "11",
         img: "https://www.uboric.com/wp-content/uploads/2021/06/10-1.jpeg",
         name: "Shoptool ® Woman’s 1st Choice 900 ml ",
-        price: "899.00"
+        price: 899.00
     },
     {
         id: "12",
         img: "https://www.uboric.com/wp-content/uploads/2021/06/200.jpeg",
         name: "Shoptool ® Woman’s 1st Choice 1400 ml",
-        price: "1799.00"
+        price: 1799.00
     },
     {
         id: "13",
         img: "https://www.uboric.com/wp-content/uploads/2021/06/1-1.jpeg",
         name: "Shoptool ® Woman’s 1st Choice 500 ml",
-        price: "1249.00",
+        price: 1249.00
     },
     {
         id: "14",
         img: "https://www.uboric.com/wp-content/uploads/2021/06/10-630-ml-container-shoptool-original-imafzpuav2pk2fhf.jpeg",
         name: "Shoptool Woman’s 1st Choice 630 ml",
-        price: "899.00"
+        price: 899.00
     },
     {
         id: "15",
         img: "https://www.uboric.com/wp-content/uploads/2021/06/1-3.jpeg",
         name: "Shoptool Woman’s 1st Choice 700 ml",
-        price: "499.00"
+        price: 499.00
     },
     {
         id: "16",
         img: "https://www.uboric.com/wp-content/uploads/2021/06/10-2.jpeg",
         name: "Shoptool Woman’s 1st Choice 700 ml",
-        price: "499.00"
+        price: 499.00
     }
 ]
 localStorage.setItem("Products_airtight", JSON.stringify(Product_data))

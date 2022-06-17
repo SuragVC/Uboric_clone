@@ -2,37 +2,37 @@ let Product_data = [{
         id: "33",
         img: "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-92-1000x667.jpg",
         name: "10 pcs Shoptool Gas Lighter with New Printed Design",
-        price: "449.00 "
+        price: 449.00
     },
     {
         id: "34",
         img: "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-92.jpg",
         name: "Shoptool Gas Lighter with New Printed Design | 4pcs.| ",
-        price: "299.00"
+        price: 299.00
     },
     {
         id: "35",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/GL-08.png",
         name: "1.5ft long Stainless Steel Regular",
-        price: "149.00"
+        price: 149.00
     },
     {
         id: "36",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/photo_2020-09-29_11-08-40.jpg",
         name: "1ft 1.5ft combo (2qty each) Stainless Steel",
-        price: "349.00"
+        price: 349.00
     },
     {
         id: "37",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/photo_2020-09-29_11-08-40.jpg",
         name: "1ft 1.5ft combo Stainless Steel Regular",
-        price: "249.00"
+        price: 249.00
     },
     {
         id: "38",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/GL-07.png",
         name: "1ft long Stainless Steel Regular",
-        price: "129.00"
+        price: 129.00
     },
     {
         id: "39",
@@ -44,54 +44,54 @@ let Product_data = [{
         id: "40",
         img: "https://www.uboric.com/wp-content/uploads/2021/01/xllent9black1400ml-speack-original-imafymzd7q8wgmmf.png",
         name: "shoptool Grocery Containers – 900 ml...",
-        price: "199.00"
+        price: 199.00
     },
     {
         id: "41",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/GL-12.png",
         name: "PACK OF 2 blue Stainless Steel...",
-        price: "199.00"
+        price: 199.00
     },
     {
         id: "42",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/GL-10.png",
         name: "PACK OF 2 blue Stainless Steel...",
-        price: "199.00"
+        price: 199.00
     },
     {
         id: "43",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/photo_2020-09-20_12-41-06.jpg",
         name: "PACK OF 2 Green Stainless Steel Regular...",
-        price: "199.00"
+        price: 199.00
     },
     {
         id: "44",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/GL-14.png",
         name: "PACK OF 2 Green Stainless Steel ...",
-        price: "199.00"
+        price: 199.00
     },
     {
         id: "45",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/photo_2020-09-29_11-09-03.jpg",
         name: "pack of 3 Stainless Steel Regular..",
-        price: "199.00"
+        price: 199.00
     },
     {
         id: "46",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/photo_2020-09-29_11-09-00.jpg",
         name: "pack of 3 Stainless Steel Regular Gas..",
-        price: "199.00"
+        price: 199.00
     },
     {
         id: "47",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/photo_2020-09-29_11-08-57.jpg",
         name: "pack of 3 Stainless Steel Regular Gas",
-        price: "199.00"
+        price: 199.00
     }, {
         id: "48",
         img: "https://www.uboric.com/wp-content/uploads/2020/09/photo_2020-09-29_11-08-57.jpg",
         name: "pack of 6 (2qty each) Stainless Steel",
-        price: "299.00"
+        price: 299.00
     }
 ]
 
