@@ -8,7 +8,7 @@ function navbar() {
        <div id="search_logo"> -->
        <!-- <img src="./images/search.png" alt="" srcset=""> -->
        <input type="search" placeholder="Search here..."  id="search">
-          <button onclick="search()"><img src="images/search.png"></button>     <!-- </div> -->
+          <button onclick="search()"><img id="search_logo" src="images/search.png"></button>     <!-- </div> -->
      
     </div>
    
