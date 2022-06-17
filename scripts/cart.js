@@ -23,18 +23,14 @@ qtyCreater()
 function qtyCreater() {
     data2.forEach(function(elem) {
         elem.qty = 1
-        let number = +(elem.price)
-
-        // elem.price = pr
-
+        elem.first_price = elem.price
     })
-    DisplayCart(data2, data)
+    DisplayCart(data2)
 }
 
 
-function DisplayCart(datas, data) {
+function DisplayCart(datas) {
 
-    let data1 = data
     data_appender.innerHTML = null
     datas.forEach(function(elem, index, data1) {
         let main_div = document.createElement("div")
@@ -51,7 +47,7 @@ function DisplayCart(datas, data) {
 
         let div3 = document.createElement("div")
         let prices = document.createElement("h3")
-        prices.innerText = data1[index].price
+        prices.innerText = elem.first_price
 
         div3.append(prices)
 
@@ -102,14 +98,14 @@ function DisplayCart(datas, data) {
 
         main_div.append(div1, div2, div3, div4, div5)
         data_appender.append(main_div)
-
+        totalShower(datas)
     })
-    totalShower(datas)
+
 }
 
 function totalShower(data2) {
     total_price.innerHTML = null
-    if (data2 == null || data2 == undefined) {
+    if (data2 == null || data2 == undefined || data2.length == 0) {
         let total_amt = document.createElement("h3")
         total_amt.innerText = "0"
         total_price.append(total_amt)
@@ -128,10 +124,7 @@ function totalShower(data2) {
 
 function addQty(i) {
     data2[i].qty++
-        let amt1 = +data2[i].price
-    let amt2 = +data[i].price
-    let total = amt1 + amt2
-    data2[i].price = total
+        data2[i].price = data2[i].price + data2[i].first_price
     DisplayCart(data2)
 }
 
@@ -140,14 +133,12 @@ function addQty(i) {
 function removeQty(i) {
     if (data2[i].qty > 1) {
         data2[i].qty--
-            let total = data2[i].price - data[i].price
-        data2[i].price = total
+            data2[i].price = data2[i].price - data2[i].first_price
         DisplayCart(data2)
     }
 }
 
 function removeProduct(i) {
-    console.log("dfaj")
     data.splice(i, 1)
 
     localStorage.setItem("cart_data", JSON.stringify(data))
