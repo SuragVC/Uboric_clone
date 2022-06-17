@@ -38,7 +38,7 @@
     width: 25%;
     border: 1px solid black;
     margin-top: 50px;
-    margin-left: 45px;
+    margin-left:45px;
     height: 40px;
     border-radius: 2px;
     font-size: 20px;
@@ -94,11 +94,7 @@
 }
 
 
-#categories_div>h3 {
-    /* text-align: center;
-    cursor: pointer;
-    margin-left: 70px; */
-}
+
 
 #product_link {
     text-decoration: none;
@@ -114,3 +110,8 @@
 #product_navbar {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+/* #search_logo{
+    margin-left: -50px;
+} */
