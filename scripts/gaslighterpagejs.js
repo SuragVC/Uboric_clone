@@ -127,7 +127,7 @@ function displayProducts() {
         input.setAttribute("class", "addtocartbtn")
 
         input.addEventListener("click", function() {
-            addtocart(data)
+            checkCart(data)
         })
 
         price_div.append(price_divinner, input)
@@ -137,6 +137,29 @@ function displayProducts() {
         appender.append(div)
     })
 
+}
+
+function checkCart(data) {
+    let ans = false;
+    if (arr_of_products.length == 0) {
+        addtocart(data)
+    } else {
+        arr_of_products.forEach(function(elem) {
+            if (elem.id == data.id) {
+                ans = true;
+            }
+        })
+        if (ans == false) {
+            addtocart(data)
+        } else {
+            alerter()
+        }
+    }
+
+}
+
+function alerter() {
+    alert("Item already in the cart")
 }
 
 function addtocart(datas) {
