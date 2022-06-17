@@ -6,6 +6,9 @@ import { product_nav } from '../components/navbar.js'
 let lower_div = document.getElementById("product_div")
 lower_div.innerHTML = product_nav()
 
+import { footer } from '../components/footer.js';
+document.querySelector('#footer').innerHTML = footer();
+
 
 let data = JSON.parse(localStorage.getItem("cart_data"))
 let data2 = data
@@ -21,7 +24,7 @@ qtyCreater()
 
 
 function qtyCreater() {
-    data2.forEach(function(elem) {
+    data2.forEach(function (elem) {
         elem.qty = 1
         elem.first_price = elem.price
     })
@@ -32,7 +35,7 @@ function qtyCreater() {
 function DisplayCart(datas) {
 
     data_appender.innerHTML = null
-    datas.forEach(function(elem, index, data1) {
+    datas.forEach(function (elem, index, data1) {
         let main_div = document.createElement("div")
 
         let div1 = document.createElement("div")
@@ -66,7 +69,7 @@ function DisplayCart(datas) {
         let add_button = document.createElement("h4")
         add_button.innerText = "+"
         div4_inside1.append(add_button)
-        div4_inside1.addEventListener("click", function() {
+        div4_inside1.addEventListener("click", function () {
             addQty(index)
         })
 
@@ -76,7 +79,7 @@ function DisplayCart(datas) {
         let remove_button = document.createElement("h4")
         remove_button.innerText = "-"
         div4_inside3.append(remove_button)
-        div4_inside3.addEventListener("click", function() {
+        div4_inside3.addEventListener("click", function () {
 
             removeQty(index)
         })
@@ -91,7 +94,7 @@ function DisplayCart(datas) {
         remove_product.value = "REMOVE"
 
         remove_product.setAttribute("class", "remove_product")
-        remove_product.addEventListener("click", function() {
+        remove_product.addEventListener("click", function () {
             removeProduct(index)
         })
         div5.append(remove_product)
@@ -113,7 +116,7 @@ function totalShower(data2) {
         let total = 0;
 
         let total_amter = document.createElement("h3")
-        data2.forEach(function(elem) {
+        data2.forEach(function (elem) {
             total = total + elem.price
         })
         console.log(total)
@@ -124,7 +127,7 @@ function totalShower(data2) {
 
 function addQty(i) {
     data2[i].qty++
-        data2[i].price = data2[i].price + data2[i].first_price
+    data2[i].price = data2[i].price + data2[i].first_price
     DisplayCart(data2)
 }
 
@@ -133,7 +136,7 @@ function addQty(i) {
 function removeQty(i) {
     if (data2[i].qty > 1) {
         data2[i].qty--
-            data2[i].price = data2[i].price - data2[i].first_price
+        data2[i].price = data2[i].price - data2[i].first_price
         DisplayCart(data2)
     }
 }

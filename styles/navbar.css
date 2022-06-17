@@ -4,10 +4,19 @@
 
 #top_header {
     width: 100%;
-    height: 45px;
+    height: 40px;
     position: static;
     background-color: #1E516C;
-    padding: 5px 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top_header p {
+    color: whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 #rupee {
@@ -74,7 +83,7 @@
 #categories_div {
     height: 75px;
     width: 65%;
-    margin-top: 150px;
+    margin-top: 22px;
     margin-left: 285px;
     display: flex;
     gap: 25px;

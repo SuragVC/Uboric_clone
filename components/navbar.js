@@ -1,9 +1,7 @@
 function navbar() {
-    return ` <div id="top_header">
-  
-
- 
-    <p>FOR ONLINE PAYMENT EXTRA RS-100 DISCOUNT ON ORDERS ABOVE RS-500</p>
+   return ` <div id="top_header">
+    <p>FOR ONLINE PAYMENT EXTRA ₹100 DISCOUNT ON ORDERS ABOVE ₹500</p>
+    </div>
       
     <div id="search_bar">
        <!-- <input type="search" id="search" placeholder="Search here...">
@@ -25,7 +23,7 @@ function navbar() {
 
 
 function product_nav() {
-    return `    <div id="categories_div">
+   return `    <div id="categories_div">
     <a  id="product_link" href="index.html"><h3>HOME</h3></a>
     <a id="product_link" href="kitchentools.html"><h3>Products</h3></a>
     <a id="product_link" href="user.html"><h3>Customer/Guest login</h3></a>

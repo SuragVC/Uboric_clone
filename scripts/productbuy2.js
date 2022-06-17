@@ -8,6 +8,3 @@ lower_div.innerHTML = product_nav();
 
 import { footer } from '../components/footer.js';
 document.getElementById('footer').innerHTML = footer();
-
-
-
