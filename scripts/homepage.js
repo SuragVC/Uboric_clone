@@ -36,7 +36,7 @@ let time = setInterval(function() {
 }, 1800)
 
 import { footer } from "../components/footer.js";
-let footer_div=document.getElementById("footer")
+let footer_div = document.getElementById("footer")
 footer_div.innerHTML = footer()
 
 
