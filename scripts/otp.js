@@ -1,6 +1,12 @@
 let btn = document.getElementById("confirm_btn")
 btn.addEventListener("click", submited)
 
+function clickEvent(first, last) {
+    if (first.value.length) {
+        document.getElementById(last).focus();
+    }
+}
+
 function submited() {
     let i1 = document.querySelector("#box1").value
     let i2 = document.querySelector("#box2").value
