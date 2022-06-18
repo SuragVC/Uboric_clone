@@ -38,3 +38,7 @@ navbar_div.innerHTML = navbar();
 import { product_nav } from '../components/navbar.js'
 let lower_div = document.getElementById("product_div")
 lower_div.innerHTML = product_nav()
+
+import { footer } from "../components/footer.js";
+let footer_div = document.getElementById("footer")
+footer_div.innerHTML = footer()
