@@ -6,7 +6,7 @@ This was a collaborative project made by 4 members Executed in 4 days.
 3) Om Kundu
 4) Anmol Kumar
 
-  Deployed Link: ubiquitous-sundae-f0f425.netlify.app/
+  Deployed Link: http://ubiquitous-sundae-f0f425.netlify.app/
 
 ---
 
